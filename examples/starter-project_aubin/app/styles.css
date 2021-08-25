@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: 300ms;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background: #222222;
+}
+
+.fadein {
+    animation: fadein 2s;
+}
+
+#greeting {
+    margin-top: 30vh;
+    color: #f8f8ff;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#greeting:hover {
+    color: #121212;
+    transition: 200ms;
+}
+
+#name {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 14em;
+    height: 3em;
+
+    text-align: center;
+    color: #f8f8ff;
+    border: none;
+
+    background: #121212;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 1px #181818;
+}
+
+#name:focus {
+    border: none;
+    outline: 2px solid teal;
+}
+
+#tooltip {
+    color: #a1a1a1;
+}
+
+.hidden {
+    opacity: 0%;
+    transition: 300ms;
+    pointer-events: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
