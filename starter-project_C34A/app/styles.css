@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(56, 92, 94);
+  color: lightcyan;
+}
+
+main {
+  background-color: rgb(76, 110, 112);
+  width: min-content;
+  min-width: 50%;
+  max-width: 95%;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 70vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 8vh;
+  font-family: 'Architects Daughter', cursive;
+}
+
+input, button {
+  background-color: rgb(68, 92, 92);
+  border-radius: 10px;
+  border: none;
+  color: rgb(212, 212, 212);
+  padding: 8px;
+  font-size: 4vh;
+  font-family: 'Inconsolata', monospace;
+  margin: 5px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
